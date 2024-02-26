@@ -39,5 +39,29 @@
     row-gap: 7px;
 }
 
+.main-content-article{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 390px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+}
+
+.img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.article-paragraph{
+    font-size: 20px;
+}
+
+
 
 
