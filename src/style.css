@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo-onebitcode{
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.header-buttons{
+    display: flex;
+    column-gap: 30px;
+}
+
+.button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    cursor:pointer;
+    border-bottom: 2px solid black;
+    transition: 0.4s;
+}
+.button:hover{
+    border-bottom: 2px solid white;
+}
+
+
+
