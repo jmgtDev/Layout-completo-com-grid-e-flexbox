@@ -100,3 +100,13 @@ h2{
     font-size: 17px;
 }
 
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.back-to-top-button{
+    font-size: 20px;
+}
