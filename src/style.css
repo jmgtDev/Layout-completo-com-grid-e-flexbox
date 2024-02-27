@@ -43,13 +43,15 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 390px;
+    height: 360px;
+    flex: 1 0 auto;
 }
 
 .main-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 40px;
+    gap: 15px;
+    padding-left: 75px;
 }
 
 .img{
@@ -62,6 +64,39 @@
     font-size: 20px;
 }
 
+.side-content{
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
 
 
+}
+
+.all-content{
+    display: flex;
+    gap: 40px;
+}
+
+.side-content-article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 1 0 auto;
+}
+
+.img-side{
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 17px;
+}
 
