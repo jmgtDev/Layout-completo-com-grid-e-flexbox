@@ -1,13 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    /*box-sizing: border-box; facilita o calculo total do width e height do elemento. Com ele, o width e o height setados já contam com o tamanho do padding e da border. Tirei apenas porque já tinha feito sem e poderia causar vários problemas.*/
 }
 
+/*ajuste do container, que abrange todos os elementos presentes na tela*/
 .container{
     gap: 20px;
     display: flex;
     flex-direction: column;
 }
+
+/*ajuste da header e de seus elementos*/
 .header{
     background-color: black;
     display: flex;
@@ -15,28 +19,16 @@
     align-items: center;
     padding: 20px;
 }
-
 .logo-onebitcode{
     max-width: 150px;
     cursor: pointer;
 }
-
 .header-buttons{
     display: flex;
     column-gap: 30px;
 }
 
-.button{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    cursor:pointer;
-    border-bottom: 2px solid black;
-    transition: 0.4s;
-}
-.button:hover{
-    border-bottom: 2px solid white;
-}
-
+/*ajuste da barra de título com seu subtítulo*/
 .title{
     display: flex;
     flex-direction: column;
@@ -45,22 +37,12 @@
     row-gap: 7px;
 }
 
-.main-content-article{
+/*ajuste de todo o conteúdo principal, com a seção principal e a seção lateral*/
+.all-content{
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 320px;
-    flex: 1 0 auto;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: 0.6s;
-    cursor: pointer;
+    gap: 40px;
 }
-
-.main-content-article:hover{
-    border: 2px solid black;
-}
-
+/*seção principal e seus artigos*/
 .main-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,17 +50,29 @@
     padding-left: 75px;
     flex: 1 0 auto;
 }
-
+.main-content-article{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 320px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.main-content-article:hover{
+    border: 2px solid black;
+}
 .img{
     width: 300px;
     height: 180px;
     border-radius: 10px;
 }
-
 .article-paragraph{
     font-size: 18px;
 }
 
+/*seção lateral e seus artigos*/
 .side-content{
     background-color: black;
     display: flex;
@@ -87,16 +81,11 @@
     padding: 30px;
     gap: 30px;
     border-radius: 10px;
-
-
 }
-
-.all-content{
-    display: flex;
-    gap: 40px;
-    min-width: 100%;
+h2{
+    font-size: 17px;
+    color: white;
 }
-
 .side-content-article{
     display: flex;
     flex-direction: column;
@@ -109,22 +98,16 @@
     transition: 0.6s;
     cursor: pointer;
 }
-
 .side-content-article:hover{
     border: 2px solid white;
 }
-
 .img-side{
     width: 220px;
     height: 150px;
     border-radius: 10px;
 }
 
-h2{
-    font-size: 17px;
-    color: white;
-}
-
+/*ajuste do footer e seus elementos*/
 .footer{
     background-color: black;
     display: flex;
@@ -132,11 +115,23 @@ h2{
     align-items: center;
     padding: 20px;
 }
-
 .back-to-top-button{
-    font-size: 20px;
+    font-size: 15px;
+    text-decoration: none; /*tira toda decoração do texto. No caso, usei pra tirar o sublinhado que vem com a tag <a>*/
 }
 
+/*ajuste da cor e dos efeitos de todos os botões. Três são do header e um do footer*/
+.button{
+    color: white;
+    cursor:pointer;
+    border-bottom: 2px solid black;
+    transition: 0.4s;
+}
+.button:hover{
+    border-bottom: 2px solid white;
+}
+
+/*ajuste da responsividade da página*/
 @media (max-width: 1360px){
     .main-content{
         grid-template-columns: repeat(2, 1fr);
